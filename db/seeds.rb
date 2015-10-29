@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Item.destroy_all
-Category.destroy_all
+Product.destroy_all
+# Category.destroy_all
 
 Product.create([
 # BRITISH CARS  ----------------------------------------
