@@ -6,6 +6,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :image_url
       t.integer :price
       t.string :category
+      t.string :stripe_id
 
       t.timestamps null: false
     end

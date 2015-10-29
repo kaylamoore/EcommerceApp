@@ -1,9 +1,20 @@
 class ChargesController < ApplicationController
 
+
+before_filter :authenticate_user!
+
 	def new
 		
 	end
 
+	def update
+		token = params[:stripeToken]
+		
+		customer = Stripe::Customer.create(
+			:card => token,
+			:email => current_user_email
+			)
+	end
 	def create 
 		# amoutn in cents 
 		@amount = 500 
