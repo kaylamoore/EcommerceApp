@@ -8,6 +8,10 @@
 </head>
 <body>
 
+<%= link_to "SIGN OUT", destroy_user_session_path, method: :delete %>
+<%= link_to "SIGN IN", new_user_session_path %>
+<%= link_to "SIGN UP", new_user_registration_path%>
+
  	<p class="notice"><%= notice %></p>
  	<p class="alert"><%= alert %></p>
 
