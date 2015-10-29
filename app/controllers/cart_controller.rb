@@ -29,5 +29,5 @@ class CartController < ApplicationController
   		@cart = {}
   end
 
-  
+end
 end
