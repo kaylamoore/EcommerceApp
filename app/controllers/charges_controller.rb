@@ -4,17 +4,23 @@ class ChargesController < ApplicationController
 before_filter :authenticate_user!
 
 	def new
-		
+		cart = session[:cart]
+		@total = 0
+		cart.each do | id, quantity |
+			product = Product.find_by_id(id)
+			@total += quantity * product.price
+		end
 	end
 
-	def update
-		token = params[:stripeToken]
+	#def update
+		#token = params[:stripeToken]
 		
-		customer = Stripe::Customer.create(
-			:card => token,
-			:email => current_user_email
-			)
-	end
+		#customer = Stripe::Customer.create(
+			#:card => token,
+			#:email => current_user_email
+			#)
+	#end
+
 	def create 
 		# amoutn in cents 
 		@amount = 500 
@@ -27,7 +33,7 @@ before_filter :authenticate_user!
 		charge = Stripe::Charge.create(
 			:customer => customer.id,
 			:amount => @amount,
-			:description => 'Rails Stripe customer'
+			:description => 'Rails Stripe customer',
 			:currency => 'usd'
 			)
 

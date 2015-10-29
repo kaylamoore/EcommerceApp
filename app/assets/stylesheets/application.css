@@ -24,6 +24,7 @@
 	height: 40px;
 	background: black;
 	float: left;
+	text-transform: uppercase;
 }
 
 #page_nav a, #sign_in a{
