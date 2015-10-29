@@ -11,9 +11,9 @@ before_filter :authenticate_user!
 			#@total += quantity * product.price
 		end
 	end
-	def total_price
-		quantity * product price 
-	end
+	#def total_price
+		#quantity * product price 
+	#end
 
 	def create 
 		# amoutn in cents 
