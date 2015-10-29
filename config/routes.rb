@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :charges
+  
   devise_for :users
 
   get '/cart' => 'cart#index'
