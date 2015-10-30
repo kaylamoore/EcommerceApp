@@ -101,8 +101,8 @@ Product.create([
 
 # AMERICAN CARS -------------------------------------------------------------------
 
-{ 	title: "1959 / 1960 Cadillac",
-	image_url:"https://s3-us-west-2.amazonaws.com/haroldcleworthart/AMCN-American+Cars/HC001_AMCN_59_60_cadillac.jpg", 
+{ 	title: "Corvette",
+	image_url:"https://s3-us-west-2.amazonaws.com/haroldcleworthart/AMCN-American+Cars/HC041_AMCN_Corvette.jpg", 
 	category: "American",
 	price: 850,
 	description: "Bacon ipsum dolor amet strip steak enim tempor andouille brisket, esse shank turducken non cupidatat pork belly excepteur pig. Shank ea salami, ullamco chicken fugiat deserunt pancetta alcatra ad consequat. Exercitation flank short ribs andouille meatloaf sirloin leberkas. Incididunt tenderloin pork chop, tempor fatback ut prosciutto quis consequat meatloaf minim voluptate hamburger. Nulla tri-tip incididunt shankle. Chicken eiusmod tail aute in kevin est non."
@@ -223,8 +223,8 @@ Product.create([
 	description: "Bacon ipsum dolor amet strip steak enim tempor andouille brisket, esse shank turducken non cupidatat pork belly excepteur pig. Shank ea salami, ullamco chicken fugiat deserunt pancetta alcatra ad consequat. Exercitation flank short ribs andouille meatloaf sirloin leberkas. Incididunt tenderloin pork chop, tempor fatback ut prosciutto quis consequat meatloaf minim voluptate hamburger. Nulla tri-tip incididunt shankle. Chicken eiusmod tail aute in kevin est non."
 },
 
-{ 	title: "Union Station",
-	image_url:"https://s3-us-west-2.amazonaws.com/haroldcleworthart/OTHR-Other+Misc/HC103_OTHR_Union+Station+2.0.jpg", 
+{ 	title: "Hostel",
+	image_url:"https://s3-us-west-2.amazonaws.com/haroldcleworthart/OTHR-Other+Misc/HC025_OTHR_Hostel.jpeg", 
 	category: "Other Works",
 	price: 850,
 	description: "Bacon ipsum dolor amet strip steak enim tempor andouille brisket, esse shank turducken non cupidatat pork belly excepteur pig. Shank ea salami, ullamco chicken fugiat deserunt pancetta alcatra ad consequat. Exercitation flank short ribs andouille meatloaf sirloin leberkas. Incididunt tenderloin pork chop, tempor fatback ut prosciutto quis consequat meatloaf minim voluptate hamburger. Nulla tri-tip incididunt shankle. Chicken eiusmod tail aute in kevin est non."
