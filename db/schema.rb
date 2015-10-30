@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20151029193924) do
     t.string   "image_url"
     t.integer  "price"
     t.string   "category"
+    t.string   "stripe_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

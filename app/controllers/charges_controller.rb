@@ -8,7 +8,7 @@ before_filter :authenticate_user!
 		@total = 0
 		cart.each do | id, quantity |
 			product = Product.find_by_id(id)
-			#@total += quantity * product.price
+			@total += quantity * product.price
 		end
 	end
 	#def total_price
@@ -17,7 +17,7 @@ before_filter :authenticate_user!
 
 	def create 
 		# amoutn in cents 
-		@amount = 500 
+		#@amount = 500 
 
 		customer = Stripe::Customer.create(
 			:email => 'example@stripe.com',

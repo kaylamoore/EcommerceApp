@@ -7,6 +7,6 @@
 			class="stripe-button"
 			data-description="This is the Description"
 			data-key="<%= ENV['PUBLISHABLE_KEY'] %>"
-			data-amount="<%= @total %>"
+			data-amount="<%= @total.to_f %>"
 			data-locale="auto"></script>
 <% end %>

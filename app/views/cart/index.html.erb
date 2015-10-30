@@ -19,10 +19,10 @@
 			<p><%= number_to_currency(product.price, :unit => '$') %>
 			<p>Quantity: <%= quantity %></p>
 		</li>
-		<p><b>TT<%= @total %></b></p>
+		<p><b><%= @total %></b></p>
 	<% end %>
 <% end %> 
-
-<%= link_to "CHECK OUT", new_charge_path %>
+<br><br>
+<strong><%= link_to "CHECK OUT", new_charge_path %></strong>
 
 </ul>
