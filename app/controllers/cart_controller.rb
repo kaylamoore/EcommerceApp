@@ -26,10 +26,16 @@ before_action :authenticate_user!, except: [:index]
   end
 
   def index
-  	if session[:cart] then 
-  		@cart = session[:cart]
+  	if session[:cart]  
+      @total = 0
+      @cart = session[:cart]
+  		@cart.each do | id, quantity |
+        product = Product.find_by_id(id)
+        @total += quantity * product.price
+      end
   	else
   		@cart = {}
+
   end
 
 end
