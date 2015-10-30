@@ -2,21 +2,6 @@
 
 <h1>Available Prints</h1>
 
-<div>
-  
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
 <table>
   <thead>
     <tr>
@@ -33,8 +18,8 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.title %></td>
+        <td><%= image_tag product.image_url, :class => "picwidth" %></td>
         <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
         <td><%= product.price %></td>
         <td><%= product.category %></td>
         <td><%= link_to 'SHOW', product %></td>
