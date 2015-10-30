@@ -14,14 +14,23 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
  *{
  	margin: 0;
  	padding: 0;
  }
 
  .picwidth {
- 	width: 300px;
+ 	width: 250px;
+ 	margin: 10px;
  }
+
+.prodtitle {
+	font-weight: bold;
+}
+
 
 #nav {
 	width: 100%;

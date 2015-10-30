@@ -5,11 +5,11 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Price</th>
-      <th>Category</th>
+      <th> Title </th>
+      <th> Image </th>
+      <th> Description </th>
+      <th> $USD </th>
+      <th> Category </th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,15 +17,16 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td><%= product.title %></td>
+        <td class="prodtitle" ><%= product.title %></td>
         <td><%= image_tag product.image_url, :class => "picwidth" %></td>
         <td><%= product.description %></td>
         <td><%= product.price %></td>
         <td><%= product.category %></td>
+        <td><a href="/cart/<%= product.id %>">ADD TO CART</a></td>
         <td><%= link_to 'SHOW', product %></td>
         <td><%= link_to 'EDIT', edit_product_path(product) %></td>
         <td><%= link_to 'DESTROY', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><a href="/cart/<%= product.id %>">ADD TO CART</a></td>
+        
       </tr>
     <% end %>
   </tbody>

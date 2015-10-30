@@ -14,8 +14,8 @@
 	<% product = Product.find_by_id(id) %>
 	<% if ( product != nil ) %>
 		<li> 
-			<%= link_to product[:title], product %>
-			<p><%= product.description %></p>
+			<%= link_to product[:title], product %></br>
+			<%= image_tag product.image_url, :class => "picwidth" %>
 			<p><%= number_to_currency(product.price, :unit => '$') %>
 			<p>Quantity: <%= quantity %></p>
 		</li>
