@@ -19,9 +19,9 @@
 			<p><%= number_to_currency(product.price, :unit => '$') %>
 			<p>Quantity: <%= quantity %></p>
 		</li>
-		<% @total += quantity * product.price %>
+		<p><b>TT<%= @total %></b></p>
 	<% end %>
 <% end %> 
 
-<p><b><%= number_to_currency(total, :unit => '$') %></b></p>
+
 </ul>
