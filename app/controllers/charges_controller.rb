@@ -8,17 +8,11 @@ before_filter :authenticate_user!
 		@total = 0
 		cart.each do | id, quantity |
 			product = Product.find_by_id(id)
-			@total += quantity * product.price
+			#@total += quantity * product.price
 		end
 	end
-
-	#def update
-		#token = params[:stripeToken]
-		
-		#customer = Stripe::Customer.create(
-			#:card => token,
-			#:email => current_user_email
-			#)
+	#def total_price
+		#quantity * product price 
 	#end
 
 	def create 
